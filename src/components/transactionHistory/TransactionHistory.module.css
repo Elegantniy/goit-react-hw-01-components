@@ -1,0 +1,20 @@
+.transactionHistory {
+  table-layout: fixed;
+  margin: 50px;
+  padding: 20px;
+  width: 50%;
+}
+
+.thead {
+  background-color: rgb(180, 180, 180);
+  font-size: 40px;
+  height: 80px;
+}
+
+.td {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid rgba(199, 199, 199, 0.5);
+  background-color: rgb(122, 223, 223);
+}

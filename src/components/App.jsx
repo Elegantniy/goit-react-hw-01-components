@@ -1,6 +1,11 @@
-
 import { User } from 'components/profile/Profile';
 import user from 'data/user.json';
+import { Statistics } from 'components/statistics/Statistics';
+import stat from 'data/data.json';
+import { FriendList } from 'components/friendList/FriendList';
+import friends from 'data/friends.json';
+import { TransactionHistory } from 'components/transactionHistory/TransactionHistory';
+import transactions from 'data/transactions.json';
 
 export const App = () => {
   return (
@@ -13,6 +18,7 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
+        marginTop: "20px",
       }}
     >
       <User
@@ -22,6 +28,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <Statistics title="" stats={stat} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
